@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.thenoob.blackbox.tiles.HomeTile" >
+
+   <com.thenoob.blackbox.tiles.ImageSelector
+        android:id="@+id/bgimg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:alpha="0.4"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/help"
+        android:layout_below="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:minWidth="100dp" />
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/help"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/help"
+        android:layout_marginTop="61dp"
+        android:minWidth="100dp"
+        android:text="play" />
+
+    <Button
+        android:id="@+id/next"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/prev"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/prev" />
+
+    <TextView
+        android:id="@+id/chimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/play"
+        android:text="Choose Image"
+        android:textAppearance="?android:attr/textAppearance" />
+
+    <Spinner
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+    
+</RelativeLayout>
+
